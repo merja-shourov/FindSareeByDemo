@@ -12,14 +12,14 @@ const Header = () => {
   };
 
   return (
-    <div className="header-container w-100% bg-[#0D3A3E] py-3 text-white">
+    <div className="header-container w-100% bg-[#0D3A3E] py-2 text-white">
       <div className="header w-[80%] m-auto flex items-center justify-between">
         <div className="logo flex justify-center items-center gap-2 text-[#fff]">
           <NavLink to="/">
-            <img src="./src/assets/logo.png" width={"50px"} alt="logo" />
+            <img src="./Logo.jpg" width={"60px"} alt="logo" />
           </NavLink>
           <NavLink to="/" className="text-3xl font-bold">
-            FindSaree
+            
           </NavLink>
         </div>
         <div className="nav flex justify-center gap-3 uppercase text-[16px] font-semibold">
