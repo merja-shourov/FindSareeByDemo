@@ -1,15 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router";
+
+
 
 const categories = [
   {
     id: 1,
     name: "Wedding Sarees",
-    image: "https://images.unsplash.com/photo-1601121141949-09c9c8f3eae5",
+    image: 'https://www.koskii.com/cdn/shop/files/SAUS0039879_WINE_MULTI_5_7cd7d333-98d1-4441-a522-42eddf9beca5.jpg?v=1748345775&width=1800',
   },
   {
     id: 2,
     name: "Party Sarees",
-    image: "https://images.unsplash.com/photo-1596464716120-6e6f8d0f2a5a",
+    image: "https://www.koskii.com/cdn/shop/files/SAUS0039879_WINE_MULTI_5_7cd7d333-98d1-4441-a522-42eddf9beca5.jpg?v=1748345775&width=1800",
   },
   {
     id: 3,
@@ -24,6 +27,13 @@ const categories = [
 ];
 
 const TopCategories = () => {
+
+
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate('/saree')
+  }
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto px-6">
@@ -35,10 +45,11 @@ const TopCategories = () => {
           {categories.map((category) => (
             <div
               key={category.id}
+              onClick={handleClick}
               className="relative group rounded-2xl overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer"
             >
               <img
-                src={category.image}
+                src={category.image} 
                 alt={category.name}
                 className="w-full h-56 object-cover group-hover:scale-105 transition duration-300"
               />
@@ -56,3 +67,10 @@ const TopCategories = () => {
 };
 
 export default TopCategories;
+
+
+
+
+
+
+

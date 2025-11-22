@@ -9,7 +9,7 @@ export default function About() {
         className="relative h-[70vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            `url(${AboutImage})`
+            'https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>

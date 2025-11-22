@@ -53,12 +53,12 @@ export default function Login() {
         className="hidden lg:flex w-1/2 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80')",
+            "url('./Saree_Home.jpeg')",
         }}
       ></div>
 
       {/* Right Form Section */}
-      <div className="flex flex-col justify-center items-center w-full lg:w-1/2 bg-white p-8">
+      <div className="flex flex-col justify-center items-center w-full lg:w-1/2 bg-white p-8 ">
         <h2 className="text-3xl font-bold text-pink-600 mb-6">
           Welcome Back 💖
         </h2>

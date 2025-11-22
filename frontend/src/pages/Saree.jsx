@@ -3,6 +3,7 @@ import SareeCard from "../components/SareeCard";
 
 const Saree = () => {
   const [search, setSearch] = useState("");
+
   const [occasion, setOccasion] = useState("All");
   const [sareesData, setSareesData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,9 @@ const Saree = () => {
   };
 
   const filteredSarees = sareesData.filter((saree) => {
+    
     const matchSearch = saree.name.toLowerCase().includes(search.toLowerCase());
+
     const matchOccasion =
       occasion === "All" || saree.occasion === occasion;
     return matchSearch && matchOccasion;

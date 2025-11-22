@@ -767,7 +767,7 @@ const AdminDashboard = () => {
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          ₹{saree.pricePerDay}
+                          Tk {saree.pricePerDay}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {saree.occasion}
@@ -842,7 +842,7 @@ const AdminDashboard = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Price Per Day (₹)
+                    Price Per Day (Tk)
                   </label>
                   <input
                     type="number"

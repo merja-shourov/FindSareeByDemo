@@ -12,6 +12,13 @@ import adminRoutes from './routes/adminRoutes.js'
 import rentalRoutes from './routes/rentalRoutes.js'
 import sareeRoutes from './routes/sareeRoutes.js'
 
+
+
+
+import messageRoute from "./routes/messageRoute.js";
+
+
+
 import connectDB from "./config/db.js";
 connectDB();
 
@@ -32,6 +39,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/rentals', rentalRoutes);
 app.use('/api/sarees', sareeRoutes);
+app.use(messageRoute);
 
 
 const PORT = process.env.PORT || 5001;
